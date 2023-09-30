@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lawn care Site</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="images/lawn-care-landscapingLogo.png" alt="Lawn Care and Landscaping Logo">
+                    </div>
+
+                    <ul class="nav" id="navi-list">
+                        <li class="list-item"><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="crew.html">The Crew</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="menu" id="toggle-Button">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="hp-banner">
+                    <h3>Lawn Care &amp; Landscaping</h3>
+                    <h1>No Yard Too Small or Large</h1>
+                    <div class="btn-style">
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box-container">
+                    <div class="box-row1">
+                        <div class="info-box blue-box">
+                            <h2>Inspiration Gallery</h2>
+                            <p>Great ideas for your next landscaping project</p>
+                            <div class="btn-style">
+                                <a href="" class="button">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="info-box green-box">
+                            <h2>Meet the Crew</h2>
+                            <p>Professional arborists and lawn care specialists</p>
+                            <div class="btn-style">
+                                <a href="" class="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-container2">
+                    <div class="box-row2">
+                        <div class="image-item"><img src="images/homepage-image-1.jpg" class="col-images" alt=""></div>
+                        <div class="image-item"><img src="images/homepage-image-2.jpg" class="col-images" alt=""></div>
+                        <div class="image-item"><img src="images/homepage-image-3.jpg" class="col-images" alt=""></div>
+                        <div class="image-item"><img src="images/homepage-image-4.jpg" class="col-images" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="social-media">
+                    <img class="social" src="images/social-facebook.png" alt="Facebook Link">
+                    <img class="social" src="images/social-pinterest.png" alt="Pintrest Link">
+                    <img class="social" src="images/social-twitter.png" alt="Twitter Link">
+                </div>
+                <div class="col">
+                    <p class="footer-text">&copy;2017 Lawn Care Landscaping. This website is a student project and does
+                        not represent a real company. All rights reserved by Independence University.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle-Button');
+    const navList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
+
+</html>
